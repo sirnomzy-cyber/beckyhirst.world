@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Becky Hirst Media Hub — Podcast, book, articles, thought bubbles, videos and free resources on community engagement, leadership and honest participation." />
+  <title>Media Hub — Becky Hirst</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-name">Becky Hirst</span>
+        <span class="nav-logo-dot">·</span>
+        <span class="nav-logo-world">world</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="speaking.html" class="nav-link">Speaking</a></li>
+        <li><a href="heyengage.html" class="nav-link">HeyEngage</a></li>
+        <li><a href="media.html" class="nav-link nav-link--current">Media</a></li>
+        <li><a href="contact.html" class="nav-link nav-link--cta">Work Together</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="media-hero">
+    <div class="media-hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1600&auto=format&fit=crop&q=80"
+        alt="Media Hub"
+        class="media-hero-img"
+        loading="eager"
+      />
+      <div class="media-hero-overlay"></div>
+    </div>
+
+    <div class="media-hero-content">
+      <div class="media-hero-inner reveal-up">
+        <span class="section-eyebrow section-eyebrow--light">Ideas in Motion</span>
+        <h1 class="media-hero-headline">
+          Every format.<br />
+          <em>One conversation.</em>
+        </h1>
+        <p class="media-hero-sub">
+          Podcast episodes, published writing, video talks, thought bubbles and free resources — all of Becky's thinking, in one place.
+        </p>
+        <div class="media-hero-tabs">
+          <a href="#podcast" class="media-hero-tab">Podcast</a>
+          <a href="#book" class="media-hero-tab">Book</a>
+          <a href="#articles" class="media-hero-tab">Articles</a>
+          <a href="#resources" class="media-hero-tab">Resources</a>
+          <a href="#video" class="media-hero-tab">Video</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: PODCAST ===================== -->
+  <section class="podcast-section" id="podcast">
+    <div class="container">
+      <div class="podcast-layout">
+
+        <div class="podcast-intro reveal-up">
+          <span class="section-eyebrow">Listen</span>
+          <h2 class="section-title">The Podcast</h2>
+          <p>Honest conversations with practitioners, leaders and changemakers about the real work of genuine community engagement. No spin. No clichés. Just people doing the work, talking about what they've learned.</p>
+          <div class="podcast-platforms">
+            <span class="podcast-platform">Available on</span>
+            <a href="#" class="platform-badge">Spotify</a>
+            <a href="#" class="platform-badge">Apple Podcasts</a>
+            <a href="#" class="platform-badge">Google Podcasts</a>
+          </div>
+        </div>
+
+        <div class="podcast-episodes">
+
+          <div class="episode-card episode-card--feature reveal-up" data-delay="0">
+            <div class="episode-image">
+              <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&auto=format&fit=crop&q=80" alt="Episode 47" loading="lazy" />
+              <div class="episode-play-btn">▶</div>
+            </div>
+            <div class="episode-body">
+              <div class="episode-meta">
+                <span class="episode-num">EP. 47</span>
+                <span class="episode-duration">42 min</span>
+                <span class="episode-date">Recent</span>
+              </div>
+              <h3>What Does Genuine Participation Actually Look Like?</h3>
+              <p>Three practitioners pushing the boundaries of community engagement share what they've learned, what's failed, and what genuine participation looks like in practice.</p>
+            </div>
+          </div>
+
+          <div class="episode-card reveal-up" data-delay="80">
+            <div class="episode-image episode-image--sm">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=80" alt="Episode 46" loading="lazy" />
+              <div class="episode-play-btn episode-play-btn--sm">▶</div>
+            </div>
+            <div class="episode-body">
+              <div class="episode-meta">
+                <span class="episode-num">EP. 46</span>
+                <span class="episode-duration">38 min</span>
+              </div>
+              <h3>Leading With Vulnerability — A Conversation With Sector Leaders</h3>
+            </div>
+          </div>
+
+          <div class="episode-card reveal-up" data-delay="160">
+            <div class="episode-image episode-image--sm">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80" alt="Episode 45" loading="lazy" />
+              <div class="episode-play-btn episode-play-btn--sm">▶</div>
+            </div>
+            <div class="episode-body">
+              <div class="episode-meta">
+                <span class="episode-num">EP. 45</span>
+                <span class="episode-duration">51 min</span>
+              </div>
+              <h3>Why Most Engagement Strategies Fail Before They Begin</h3>
+            </div>
+          </div>
+
+          <div class="episode-card reveal-up" data-delay="240">
+            <div class="episode-image episode-image--sm">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&auto=format&fit=crop&q=80" alt="Episode 44" loading="lazy" />
+              <div class="episode-play-btn episode-play-btn--sm">▶</div>
+            </div>
+            <div class="episode-body">
+              <div class="episode-meta">
+                <span class="episode-num">EP. 44</span>
+                <span class="episode-duration">44 min</span>
+              </div>
+              <h3>The Politics of Community Engagement in Government</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: BOOK ===================== -->
+  <section class="book-section" id="book">
+    <div class="book-inner">
+      <div class="book-visual reveal-up">
+        <div class="book-cover">
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop&q=80" alt="Becky Hirst book" loading="lazy" />
+          <div class="book-spine"></div>
+        </div>
+      </div>
+
+      <div class="book-content reveal-up" data-delay="120">
+        <span class="section-eyebrow section-eyebrow--light">Published Work</span>
+        <h2 class="section-title section-title--light">The Book</h2>
+        <h3 class="book-title">Showing Up Honestly:<br />A Practitioner's Guide to Genuine Community Engagement</h3>
+        <p class="book-desc">The definitive guide to community engagement practice — from someone who has spent 27 years doing the real thing. Part framework, part memoir, part provocation. Required reading for anyone who works between organisations and communities.</p>
+
+        <div class="book-praise">
+          <blockquote>"This is the book the sector has been waiting for. Practical, honest, and long overdue."</blockquote>
+          <cite>— Professor of Public Policy, University of Melbourne</cite>
+        </div>
+
+        <div class="book-actions">
+          <a href="#" class="btn btn-light">Buy the Book</a>
+          <a href="#" class="btn btn-ghost-light">Read an Extract</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: ARTICLES ===================== -->
+  <section class="articles-section" id="articles">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Written Work</span>
+        <h2 class="section-title">Articles & Thought Bubbles</h2>
+        <p class="section-desc">Becky writes when she has something worth saying. These aren't content marketing — they're ideas.</p>
+      </div>
+
+      <div class="articles-grid">
+
+        <article class="article-card article-card--feature reveal-up" data-delay="0">
+          <div class="article-image">
+            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=900&auto=format&fit=crop&q=80" alt="Article" loading="lazy" />
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag">Essay</span>
+              <span class="article-date">November 2024</span>
+              <span class="article-read">12 min read</span>
+            </div>
+            <h3>The Organisations That Will Thrive Are the Ones That Learn to Listen</h3>
+            <p>In a world of noise and speed, the organisations building deep community relationships are the ones creating durable advantage — and it starts with one skill most leaders never learned.</p>
+            <a href="#" class="article-link">Read Essay →</a>
+          </div>
+        </article>
+
+        <article class="article-card reveal-up" data-delay="80">
+          <div class="article-image article-image--sm">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&auto=format&fit=crop&q=80" alt="Article" loading="lazy" />
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag">Provocation</span>
+              <span class="article-read">7 min read</span>
+            </div>
+            <h3>Why Engagement Theatre Is Worse Than No Engagement At All</h3>
+            <a href="#" class="article-link">Read →</a>
+          </div>
+        </article>
+
+        <article class="article-card reveal-up" data-delay="160">
+          <div class="article-image article-image--sm">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&auto=format&fit=crop&q=80" alt="Article" loading="lazy" />
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag">Thought Bubble</span>
+              <span class="article-read">4 min read</span>
+            </div>
+            <h3>What If We Measured Engagement Quality, Not Just Quantity?</h3>
+            <a href="#" class="article-link">Read →</a>
+          </div>
+        </article>
+
+        <article class="article-card reveal-up" data-delay="240">
+          <div class="article-image article-image--sm">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&auto=format&fit=crop&q=80" alt="Article" loading="lazy" />
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag">Leadership</span>
+              <span class="article-read">6 min read</span>
+            </div>
+            <h3>Holding Space Without Losing Your Voice</h3>
+            <a href="#" class="article-link">Read →</a>
+          </div>
+        </article>
+
+        <article class="article-card reveal-up" data-delay="320">
+          <div class="article-image article-image--sm">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&auto=format&fit=crop&q=80" alt="Article" loading="lazy" />
+          </div>
+          <div class="article-body">
+            <div class="article-meta">
+              <span class="article-tag">Strategy</span>
+              <span class="article-read">8 min read</span>
+            </div>
+            <h3>The Five Engagement Mistakes Organisations Keep Making</h3>
+            <a href="#" class="article-link">Read →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: RESOURCES ===================== -->
+  <section class="resources-section" id="resources">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Free Downloads</span>
+        <h2 class="section-title">Resources & Tools</h2>
+        <p class="section-desc">Practical tools and frameworks you can use right now. No email required.</p>
+      </div>
+
+      <div class="resources-grid">
+
+        <div class="resource-card reveal-up" data-delay="0">
+          <div class="resource-icon">◈</div>
+          <div class="resource-body">
+            <span class="resource-type">PDF Guide</span>
+            <h4>The Community Engagement Health Check</h4>
+            <p>A diagnostic tool to assess the quality and authenticity of your organisation's engagement practice. 12 questions. Honest answers.</p>
+            <a href="#" class="btn btn-outline">Download Free</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal-up" data-delay="80">
+          <div class="resource-icon">◉</div>
+          <div class="resource-body">
+            <span class="resource-type">Framework</span>
+            <h4>The Participation Spectrum Self-Assessment</h4>
+            <p>Where does your organisation sit on the participation spectrum? This self-assessment helps you be honest about where you are — and where you need to go.</p>
+            <a href="#" class="btn btn-outline">Download Free</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal-up" data-delay="160">
+          <div class="resource-icon">◇</div>
+          <div class="resource-body">
+            <span class="resource-type">Template Pack</span>
+            <h4>Community Engagement Planning Templates</h4>
+            <p>Five ready-to-use templates for engagement planning, stakeholder mapping, feedback design and impact reporting.</p>
+            <a href="#" class="btn btn-outline">Download Free</a>
+          </div>
+        </div>
+
+        <div class="resource-card reveal-up" data-delay="240">
+          <div class="resource-icon">▲</div>
+          <div class="resource-body">
+            <span class="resource-type">Reading List</span>
+            <h4>Becky's Essential Reading List</h4>
+            <p>The 20 books, papers and resources that have most shaped Becky's thinking over 27 years. Updated annually.</p>
+            <a href="#" class="btn btn-outline">Download Free</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: VIDEO ===================== -->
+  <section class="video-section" id="video">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Watch</span>
+        <h2 class="section-title">Video & Talks</h2>
+        <p class="section-desc">Selected keynote recordings, interviews and short-form video content.</p>
+      </div>
+
+      <div class="video-grid">
+
+        <div class="video-card video-card--feature reveal-up" data-delay="0">
+          <div class="video-thumb">
+            <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?w=900&auto=format&fit=crop&q=80" alt="TEDx Talk" loading="lazy" />
+            <div class="video-play">
+              <span>▶</span>
+            </div>
+            <div class="video-duration">18:24</div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag">TEDx Talk</span>
+            <h3>Showing Up Honestly — TEDx Melbourne</h3>
+            <p>Becky's most-watched talk. The gap between engagement theatre and genuine participation — and what it costs us when we get it wrong.</p>
+          </div>
+        </div>
+
+        <div class="video-card reveal-up" data-delay="80">
+          <div class="video-thumb video-thumb--sm">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&auto=format&fit=crop&q=80" alt="Conference Talk" loading="lazy" />
+            <div class="video-play video-play--sm"><span>▶</span></div>
+            <div class="video-duration">32:10</div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag">Conference Keynote</span>
+            <h3>The Listening Organisation — IAP2 Australasia Conference</h3>
+          </div>
+        </div>
+
+        <div class="video-card reveal-up" data-delay="160">
+          <div class="video-thumb video-thumb--sm">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&auto=format&fit=crop&q=80" alt="Interview" loading="lazy" />
+            <div class="video-play video-play--sm"><span>▶</span></div>
+            <div class="video-duration">24:05</div>
+          </div>
+          <div class="video-body">
+            <span class="video-tag">Interview</span>
+            <h3>In Conversation With Becky Hirst — ABC Radio National</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: NEWSLETTER ===================== -->
+  <section class="media-newsletter">
+    <div class="container">
+      <div class="media-newsletter-inner reveal-up">
+        <div class="media-nl-text">
+          <span class="section-eyebrow">Never Miss a Thing</span>
+          <h2 class="section-title">Get Becky's thinking<br /><em>straight to your inbox.</em></h2>
+          <p>New podcast episodes, articles, resources and invitations — delivered when there's something worth sharing. Never noise.</p>
+        </div>
+        <div class="media-nl-form">
+          <input type="email" placeholder="your@email.com" aria-label="Email address" class="media-nl-input" />
+          <button class="btn btn-primary">Subscribe</button>
+          <p class="media-nl-note">No spam. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Becky Hirst</a>
+        <p class="footer-tagline">Helping organisations and communities<br />show up more honestly for each other.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Twitter/X">✕</a>
+          <a href="#" class="social-link" aria-label="Instagram">◎</a>
+          <a href="#" class="social-link" aria-label="Podcast">◉</a>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-col">
+          <h5>Explore</h5>
+          <a href="about.html">About Becky</a>
+          <a href="speaking.html">Speaking</a>
+          <a href="heyengage.html">HeyEngage</a>
+          <a href="media.html">Media Hub</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-nav-col">
+          <h5>Work Together</h5>
+          <a href="contact.html">Consulting</a>
+          <a href="speaking.html">Book a Keynote</a>
+          <a href="heyengage.html">Team Training</a>
+          <a href="contact.html">Advisory</a>
+        </div>
+        <div class="footer-nav-col">
+          <h5>Connect</h5>
+          <a href="#">Newsletter</a>
+          <a href="#">Podcast</a>
+          <a href="#">Global CE Day</a>
+          <a href="#">Community Hub</a>
+        </div>
+      </nav>
+      <div class="footer-newsletter">
+        <h5>Stay in the loop</h5>
+        <p>Becky's thinking, your inbox. No noise.</p>
+        <div class="footer-form">
+          <input type="email" placeholder="your@email.com" aria-label="Newsletter email" />
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Becky Hirst · <a href="index.html">beckyhirst.world</a></p>
+      <p>Designed by <a href="https://sammiedigital.vercel.app/" target="_blank" rel="noopener noreferrer">SammieDigital</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

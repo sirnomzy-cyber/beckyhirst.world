@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Becky Hirst — speaking bookings, consulting inquiries, training and partnership opportunities." />
+  <title>Contact — Becky Hirst</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-name">Becky Hirst</span>
+        <span class="nav-logo-dot">·</span>
+        <span class="nav-logo-world">world</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="speaking.html" class="nav-link">Speaking</a></li>
+        <li><a href="heyengage.html" class="nav-link">HeyEngage</a></li>
+        <li><a href="media.html" class="nav-link">Media</a></li>
+        <li><a href="contact.html" class="nav-link nav-link--current nav-link--cta">Work Together</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="contact-hero">
+    <div class="contact-hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600&auto=format&fit=crop&q=80"
+        alt="Work together"
+        class="contact-hero-img"
+        loading="eager"
+      />
+      <div class="contact-hero-overlay"></div>
+    </div>
+
+    <div class="contact-hero-content">
+      <div class="contact-hero-inner reveal-up">
+        <span class="section-eyebrow section-eyebrow--light">Let's Talk</span>
+        <h1 class="contact-hero-headline">
+          The best work starts<br />
+          <em>with a conversation.</em>
+        </h1>
+        <p class="contact-hero-sub">
+          Whether you have a clear brief or just a feeling that something needs to change — Becky is interested in talking. No obligation. Just an honest conversation about what's possible.
+        </p>
+        <div class="contact-hero-ways">
+          <a href="#speaking-enquiry" class="contact-way-btn">Speaking</a>
+          <a href="#consulting-enquiry" class="contact-way-btn">Consulting</a>
+          <a href="#training-enquiry" class="contact-way-btn">Training</a>
+          <a href="#general-enquiry" class="contact-way-btn">General</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: OPTIONS ===================== -->
+  <section class="contact-options">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">How Can Becky Help?</span>
+        <h2 class="section-title">Choose your path</h2>
+      </div>
+
+      <div class="contact-paths">
+
+        <a href="#speaking-enquiry" class="contact-path reveal-up" data-delay="0">
+          <div class="contact-path-top">
+            <span class="contact-path-icon">◉</span>
+            <span class="contact-path-arrow">→</span>
+          </div>
+          <h3>Speaking & Keynotes</h3>
+          <p>Book Becky for your conference, summit, leadership day or event. Keynotes, workshops, panels and virtual sessions.</p>
+          <div class="contact-path-detail">Typically responds within 2 business days</div>
+        </a>
+
+        <a href="#consulting-enquiry" class="contact-path reveal-up" data-delay="80">
+          <div class="contact-path-top">
+            <span class="contact-path-icon">◈</span>
+            <span class="contact-path-arrow">→</span>
+          </div>
+          <h3>Consulting & Advisory</h3>
+          <p>Strategic planning, community engagement frameworks, facilitation, advisory retainers and ongoing partnerships.</p>
+          <div class="contact-path-detail">Limited engagements available each quarter</div>
+        </a>
+
+        <a href="#training-enquiry" class="contact-path reveal-up" data-delay="160">
+          <div class="contact-path-top">
+            <span class="contact-path-icon">◇</span>
+            <span class="contact-path-arrow">→</span>
+          </div>
+          <h3>Training & HeyEngage</h3>
+          <p>Team workshops, capability programs, the certification pathway and HeyEngage course enrolments for individuals and organisations.</p>
+          <div class="contact-path-detail">Programs run quarterly</div>
+        </a>
+
+        <a href="#general-enquiry" class="contact-path reveal-up" data-delay="240">
+          <div class="contact-path-top">
+            <span class="contact-path-icon">❋</span>
+            <span class="contact-path-arrow">→</span>
+          </div>
+          <h3>Media & Partnerships</h3>
+          <p>Podcast guest appearances, media interviews, collaborative projects, and partnership opportunities.</p>
+          <div class="contact-path-detail">All media enquiries welcome</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: SPEAKING FORM ===================== -->
+  <section class="enquiry-section" id="speaking-enquiry">
+    <div class="container">
+      <div class="enquiry-layout">
+        <div class="enquiry-left reveal-up">
+          <span class="enquiry-label">01</span>
+          <h2 class="section-title">Speaking Enquiry</h2>
+          <p>Tell Becky about your event and what you're hoping to achieve. The more context you share, the better she can assess fit and tailor her response.</p>
+          <div class="enquiry-note">
+            <span>◈</span>
+            <p>Becky takes a limited number of speaking engagements per year to maintain quality. Early enquiry is recommended, especially for major events.</p>
+          </div>
+        </div>
+
+        <div class="enquiry-right reveal-up" data-delay="120">
+          <form class="enquiry-form" id="speakingForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="sp-name">Your Name *</label>
+                <input type="text" id="sp-name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="sp-org">Organisation *</label>
+                <input type="text" id="sp-org" placeholder="Your Organisation" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sp-email">Email Address *</label>
+              <input type="email" id="sp-email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="sp-date">Event Date</label>
+                <input type="text" id="sp-date" placeholder="e.g. May 2025" />
+              </div>
+              <div class="form-group">
+                <label for="sp-size">Audience Size</label>
+                <select id="sp-size">
+                  <option value="">Select range</option>
+                  <option>Under 50</option>
+                  <option>50–150</option>
+                  <option>150–500</option>
+                  <option>500+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sp-format">Format</label>
+              <select id="sp-format">
+                <option value="">Select format</option>
+                <option>Keynote (45–60 min)</option>
+                <option>Opening Provocation (20–30 min)</option>
+                <option>Workshop (half or full day)</option>
+                <option>Panel / Moderation</option>
+                <option>Virtual Keynote</option>
+                <option>Custom</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="sp-detail">About your event and audience</label>
+              <textarea id="sp-detail" rows="5" placeholder="What's the event? Who will be there? What do you want them to leave with?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn--full">Send Speaking Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: CONSULTING FORM ===================== -->
+  <section class="enquiry-section enquiry-section--alt" id="consulting-enquiry">
+    <div class="container">
+      <div class="enquiry-layout">
+        <div class="enquiry-left reveal-up">
+          <span class="enquiry-label">02</span>
+          <h2 class="section-title">Consulting Enquiry</h2>
+          <p>Becky works with a small number of consulting clients at any one time — ensuring each engagement gets the depth and attention it deserves.</p>
+          <div class="enquiry-services">
+            <div class="enquiry-service">
+              <span>→</span><span>Strategic planning & frameworks</span>
+            </div>
+            <div class="enquiry-service">
+              <span>→</span><span>Community engagement design & delivery</span>
+            </div>
+            <div class="enquiry-service">
+              <span>→</span><span>Expert facilitation</span>
+            </div>
+            <div class="enquiry-service">
+              <span>→</span><span>Leadership development</span>
+            </div>
+            <div class="enquiry-service">
+              <span>→</span><span>Strategic advisory retainer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="enquiry-right reveal-up" data-delay="120">
+          <form class="enquiry-form" id="consultingForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="co-name">Your Name *</label>
+                <input type="text" id="co-name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="co-org">Organisation *</label>
+                <input type="text" id="co-org" placeholder="Your Organisation" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="co-email">Email Address *</label>
+              <input type="email" id="co-email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="co-type">Type of engagement</label>
+              <select id="co-type">
+                <option value="">Select type</option>
+                <option>Strategic planning project</option>
+                <option>Community engagement design</option>
+                <option>Facilitation (single event)</option>
+                <option>Ongoing advisory retainer</option>
+                <option>Leadership development program</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="co-timeline">Timeline</label>
+              <select id="co-timeline">
+                <option value="">Select timeline</option>
+                <option>Within 1 month</option>
+                <option>1–3 months</option>
+                <option>3–6 months</option>
+                <option>Flexible</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="co-detail">Tell me about your challenge</label>
+              <textarea id="co-detail" rows="5" placeholder="What are you trying to achieve? What's the challenge? What does success look like?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn--full">Send Consulting Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: TRAINING FORM ===================== -->
+  <section class="enquiry-section" id="training-enquiry">
+    <div class="container">
+      <div class="enquiry-layout">
+        <div class="enquiry-left reveal-up">
+          <span class="enquiry-label">03</span>
+          <h2 class="section-title">Training & HeyEngage</h2>
+          <p>For team training programs, HeyEngage course enquiries, the Engagement Specialist Certification, or any other capability-building conversation.</p>
+          <a href="heyengage.html" class="btn btn-outline">Explore HeyEngage First</a>
+        </div>
+
+        <div class="enquiry-right reveal-up" data-delay="120">
+          <form class="enquiry-form" id="trainingForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tr-name">Your Name *</label>
+                <input type="text" id="tr-name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="tr-org">Organisation *</label>
+                <input type="text" id="tr-org" placeholder="Your Organisation" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tr-email">Email Address *</label>
+              <input type="email" id="tr-email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="tr-interest">I'm interested in</label>
+              <select id="tr-interest">
+                <option value="">Select option</option>
+                <option>Team Intensive Workshop</option>
+                <option>Leadership Listening Lab</option>
+                <option>Organisational Capability Program</option>
+                <option>Engagement Specialist Certification</option>
+                <option>Online courses (HeyEngage)</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tr-team">Team size (if applicable)</label>
+              <select id="tr-team">
+                <option value="">Select size</option>
+                <option>Individual</option>
+                <option>Small team (under 10)</option>
+                <option>Medium team (10–30)</option>
+                <option>Large team / whole organisation (30+)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tr-detail">What are you hoping to build?</label>
+              <textarea id="tr-detail" rows="4" placeholder="Tell Becky about your team, where you are now, and what capability you want to build."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn--full">Send Training Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION: GENERAL FORM ===================== -->
+  <section class="enquiry-section enquiry-section--alt" id="general-enquiry">
+    <div class="container">
+      <div class="enquiry-layout">
+        <div class="enquiry-left reveal-up">
+          <span class="enquiry-label">04</span>
+          <h2 class="section-title">General & Media Enquiries</h2>
+          <p>For media interviews, podcast guest requests, collaborative projects, partnership opportunities, or anything that doesn't fit the categories above.</p>
+          <div class="contact-direct">
+            <h5>Prefer email?</h5>
+            <a href="mailto:hello@beckyhirst.world">hello@beckyhirst.world</a>
+          </div>
+        </div>
+
+        <div class="enquiry-right reveal-up" data-delay="120">
+          <form class="enquiry-form" id="generalForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="gn-name">Your Name *</label>
+                <input type="text" id="gn-name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="gn-org">Organisation</label>
+                <input type="text" id="gn-org" placeholder="Optional" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="gn-email">Email Address *</label>
+              <input type="email" id="gn-email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="gn-type">Nature of enquiry</label>
+              <select id="gn-type">
+                <option value="">Select type</option>
+                <option>Media interview</option>
+                <option>Podcast guest request</option>
+                <option>Collaboration / partnership</option>
+                <option>Academic / research</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="gn-message">Your message</label>
+              <textarea id="gn-message" rows="5" placeholder="Tell Becky what's on your mind."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn--full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Becky Hirst</a>
+        <p class="footer-tagline">Helping organisations and communities<br />show up more honestly for each other.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Twitter/X">✕</a>
+          <a href="#" class="social-link" aria-label="Instagram">◎</a>
+          <a href="#" class="social-link" aria-label="Podcast">◉</a>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-col">
+          <h5>Explore</h5>
+          <a href="about.html">About Becky</a>
+          <a href="speaking.html">Speaking</a>
+          <a href="heyengage.html">HeyEngage</a>
+          <a href="media.html">Media Hub</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-nav-col">
+          <h5>Work Together</h5>
+          <a href="contact.html">Consulting</a>
+          <a href="speaking.html">Book a Keynote</a>
+          <a href="heyengage.html">Team Training</a>
+          <a href="contact.html">Advisory</a>
+        </div>
+        <div class="footer-nav-col">
+          <h5>Connect</h5>
+          <a href="#">Newsletter</a>
+          <a href="#">Podcast</a>
+          <a href="#">Global CE Day</a>
+          <a href="#">Community Hub</a>
+        </div>
+      </nav>
+      <div class="footer-newsletter">
+        <h5>Stay in the loop</h5>
+        <p>Becky's thinking, your inbox. No noise.</p>
+        <div class="footer-form">
+          <input type="email" placeholder="your@email.com" aria-label="Newsletter email" />
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Becky Hirst · <a href="index.html">beckyhirst.world</a></p>
+      <p>Designed by <a href="https://sammiedigital.vercel.app/" target="_blank" rel="noopener noreferrer">SammieDigital</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Handle all enquiry forms
+    ['speakingForm','consultingForm','trainingForm','generalForm'].forEach(id => {
+      const form = document.getElementById(id);
+      if (!form) return;
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        const original = btn.textContent;
+        btn.textContent = 'Message Sent ✓';
+        btn.style.background = '#4A7A4A';
+        btn.disabled = true;
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.style.background = '';
+          btn.disabled = false;
+          form.reset();
+        }, 4000);
+      });
+    });
+  </script>
+</body>
+</html>
