@@ -367,9 +367,14 @@ const sectionObserver = new IntersectionObserver((entries) => {
 sections.forEach(s => sectionObserver.observe(s));
 
 // ===================== PAGE LOAD ANIMATION =====================
-window.addEventListener('load', () => {
+// Body starts hidden via inline style injected immediately (see below),
+// then fades in once the load event fires.
+(function () {
   document.body.style.opacity = '0';
   document.body.style.transition = 'opacity 0.6s ease';
+})();
+
+window.addEventListener('load', () => {
   requestAnimationFrame(() => {
     document.body.style.opacity = '1';
   });
