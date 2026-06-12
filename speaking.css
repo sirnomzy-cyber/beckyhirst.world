@@ -8,7 +8,7 @@
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -36,7 +36,7 @@
   width: 100%;
   max-width: var(--container);
   margin: 0 auto;
-  padding: 0 var(--gutter) 80px;
+  padding: clamp(140px, 18vw, 220px) var(--gutter) 100px;
 }
 
 .spk-hero-inner {
@@ -509,12 +509,14 @@
   border-top: 1px solid rgba(28,28,30,0.08);
 }
 
-.spk-testi-author img {
+.spk-testi-author img,
+.spk-testi-author .avatar-initials {
   width: 44px; height: 44px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--bronze-pale);
   flex-shrink: 0;
+  font-size: 0.72rem;
 }
 
 .spk-testi-author strong {

@@ -1777,3 +1777,163 @@ h4 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
   .reveal-up { opacity: 1; transform: none; }
   .hero-image-wrap { transform: none !important; }
 }
+
+/* ===================== WORLD CARDS — PHOTO BACKGROUNDS ===================== */
+
+/* Photo layer sits behind everything via ::before */
+.world-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.12; /* very subtle on front */
+  transition: opacity var(--dur-slow) var(--ease-out);
+}
+
+/* Back face: photo shows more, behind a dark overlay */
+.world-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity var(--dur-slow) var(--ease-out);
+}
+
+/* Ensure card content sits above photo layers */
+.world-card-front,
+.world-card-back {
+  z-index: 1;
+}
+
+/* On hover: front photo fades, back photo reveals */
+.world-card:hover::before { opacity: 0; }
+.world-card:hover::after  { opacity: 1; }
+
+/* Make front backgrounds semi-transparent so photo bleeds through */
+.world-card-front {
+  background: linear-gradient(160deg, rgba(242,237,228,0.88), rgba(249,245,238,0.88)) !important;
+}
+.world-card:nth-child(2) .world-card-front {
+  background: linear-gradient(160deg, rgba(44,44,46,0.88), rgba(28,28,30,0.88)) !important;
+}
+.world-card:nth-child(4) .world-card-front {
+  background: linear-gradient(160deg, rgba(74,55,40,0.88), rgba(58,42,30,0.88)) !important;
+}
+.world-card:nth-child(6) .world-card-front {
+  background: linear-gradient(160deg, rgba(58,74,58,0.88), rgba(42,58,42,0.88)) !important;
+}
+
+/* Back face: keep bronze overlay but let photo show through */
+.world-card-back {
+  background: linear-gradient(160deg, rgba(181,113,74,0.82), rgba(140,80,45,0.88)) !important;
+}
+
+/* ===================== INITIALS AVATARS ===================== */
+.avatar-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border: 2px solid var(--bronze-pale);
+  background: hsl(var(--avatar-hue, 30), 28%, 88%);
+  color: hsl(var(--avatar-hue, 30), 32%, 32%);
+}
+
+/* ===================== AVATAR REUSE — CREATIVE PLACEMENTS ===================== */
+
+/* 1. Story section portrait aside (about.html) */
+.story-portrait-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 8px 0 24px auto;
+  width: 52%;
+}
+.story-portrait-aside img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 3px;
+  filter: grayscale(15%);
+}
+.story-portrait-aside span {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-align: right;
+  font-style: italic;
+}
+
+/* 2. Credentials section portrait (about.html) */
+.creds-portrait {
+  grid-column: span 4;
+  overflow: hidden;
+  aspect-ratio: 21/6;
+}
+.creds-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  filter: grayscale(20%);
+  transition: filter 0.4s ease;
+  display: block;
+}
+.creds-portrait:hover img { filter: grayscale(0%); }
+
+@media (max-width: 1024px) { .creds-portrait { grid-column: span 2; aspect-ratio: 16/5; } }
+@media (max-width: 540px) { .creds-portrait { grid-column: span 1; aspect-ratio: 4/3; } }
+
+/* 3. Timeline photo snapshot (index.html) */
+.timeline-photo {
+  margin-top: 14px;
+  border-radius: 3px;
+  overflow: hidden;
+  max-width: 260px;
+}
+.timeline-photo img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: center 20%;
+  filter: sepia(20%) grayscale(10%);
+  display: block;
+}
+
+/* 4. Contact portrait (index.html) */
+.contact-portrait {
+  margin: 24px 0;
+  border-radius: 3px;
+  overflow: hidden;
+  max-width: 100%;
+}
+.contact-portrait img {
+  width: 100%;
+  aspect-ratio: 16/7;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  filter: grayscale(10%);
+}
+
+@media (max-width: 700px) {
+  .story-portrait-aside { width: 100%; }
+  .creds-portrait { grid-column: span 1; aspect-ratio: 4/3; }
+  .timeline-photo { max-width: 100%; }
+}

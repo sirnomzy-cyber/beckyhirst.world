@@ -321,6 +321,23 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
+// ===================== WORLD CARD PHOTO BACKGROUNDS =====================
+// Reads data-bg attribute and sets the image on both ::before (front) and ::after (back) layers
+document.querySelectorAll('.world-card[data-bg]').forEach(card => {
+  const img = card.dataset.bg;
+  card.style.setProperty('--card-bg', `url('${img}')`);
+});
+
+// Inject the CSS that binds the custom property to both pseudo-elements
+const cardBgStyle = document.createElement('style');
+cardBgStyle.textContent = `
+  .world-card[data-bg]::before { background-image: var(--card-bg); }
+  .world-card[data-bg]::after  { background-image: var(--card-bg); }
+  .world-card.touch-active::before { opacity: 0 !important; }
+  .world-card.touch-active::after  { opacity: 1 !important; }
+`;
+document.head.appendChild(cardBgStyle);
+
 // ===================== WORLD CARD TOUCH SUPPORT =====================
 // On touch devices, first tap reveals the back, second tap follows the link
 document.querySelectorAll('.world-card').forEach(card => {
@@ -378,4 +395,14 @@ window.addEventListener('load', () => {
   requestAnimationFrame(() => {
     document.body.style.opacity = '1';
   });
+});
+
+// ===================== INITIALS AVATARS =====================
+document.querySelectorAll('.avatar-initials[data-initials]').forEach(el => {
+  el.textContent = el.dataset.initials;
+  if (el.dataset.hue) {
+    el.style.setProperty('--avatar-hue', el.dataset.hue);
+    el.style.background = `hsl(${el.dataset.hue}, 28%, 88%)`;
+    el.style.color = `hsl(${el.dataset.hue}, 32%, 32%)`;
+  }
 });
