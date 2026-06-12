@@ -639,3 +639,23 @@
 .nav-link--current::after {
   width: 100% !important;
 }
+
+/* Fix 4: Speaking hero bottom row — stats pushed right like homepage */
+.spk-hero-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.spk-hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+@media (max-width: 860px) {
+  .spk-hero-bottom-row { flex-direction: column; align-items: flex-start; gap: 32px; }
+}
