@@ -1884,14 +1884,14 @@ h4 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
 .creds-portrait {
   grid-column: span 4;
   overflow: hidden;
-  aspect-ratio: 21/6;
+  aspect-ratio: 21/7;
 }
 .creds-portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 25%;
-  filter: grayscale(20%);
+  object-position: center 30%;
+  filter: grayscale(10%);
   transition: filter 0.4s ease;
   display: block;
 }
